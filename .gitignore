@@ -1,0 +1,46 @@
+# ========== Visual Studio ==========
+.vs/
+*.suo
+*.user
+*.userosscache
+*.VC.db
+*.VC.opendb
+*.aps
+*.ncb
+*.opendb
+*.sln.docstates
+
+# ========== 编译产物 / 构建输出 ==========
+x64/
+Debug/
+Release/
+[Oo]bj/
+[Bb]in/
+Build/
+
+# C/C++ 中间文件
+*.obj
+*.o
+*.pdb
+*.ilk
+*.idb
+*.exp
+*.iobj
+*.ipdb
+*.ipch
+*.tlog
+*.log
+*.recipe
+*.lastbuildstate
+*.ilk
+
+# 可执行文件(仅忽略构建目录内的;如无特殊需要也可全局忽略)
+*.exe
+*.dll
+
+# ========== IDE / OS ==========
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini
