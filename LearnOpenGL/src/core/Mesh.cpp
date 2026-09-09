@@ -38,6 +38,7 @@ unsigned int* Mesh::getIndices() {
 }
 int Mesh::getVSize()
 {
+
 	return m_vsize;
 }
 int Mesh::getISize()

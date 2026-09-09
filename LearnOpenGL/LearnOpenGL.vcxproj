@@ -162,6 +162,7 @@
     <ClInclude Include="src\include\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="res\shader\light.shader" />
     <None Include="res\shader\test1.shader" />
   </ItemGroup>
   <ItemGroup>

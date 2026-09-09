@@ -25,6 +25,8 @@ class Shader {
 		void setBool(const char* name, bool value) const;
 		void setInt(const char* name, int value) const;
 		void setFloat(const char* name, float value) const;
+		void setFloat3(const char* name, float value0, float value1, float value2) const;
 		void setFloat4(const char* name, float value0,float value1, float value2, float value3) const;
-		void setFloat4(const char* name, glm::mat4& mat4) const;
+		void setVec3(const char* name, glm::vec3 value) const;
+		void setMat4(const char* name, glm::mat4& mat4) const;
 };

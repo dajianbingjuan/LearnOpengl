@@ -19,47 +19,47 @@ int main() {
 	glEnable(GL_DEPTH_TEST);
 
 	float vertices[] = {
-		-0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
-		 0.5f, -0.5f, -0.5f,  1.0f, 0.0f,
-		 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-		 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-		-0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
-		-0.5f, -0.5f, -0.5f,  0.0f, 0.0f,
+		  -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+		   0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+		   0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+		   0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+		  -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+		  -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
 
-		-0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-		 0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
-		 0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
-		 0.5f,  0.5f,  0.5f,  1.0f, 1.0f,
-		-0.5f,  0.5f,  0.5f,  0.0f, 1.0f,
-		-0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
+		  -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+		   0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+		   0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+		   0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+		  -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+		  -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
 
-		-0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-		-0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-		-0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-		-0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-		-0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-		-0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+		  -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+		  -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+		  -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+		  -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+		  -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+		  -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
 
-		 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-		 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-		 0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-		 0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-		 0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-		 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
+		   0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+		   0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
+		   0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
+		   0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
+		   0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+		   0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
 
-		-0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
-		 0.5f, -0.5f, -0.5f,  1.0f, 1.0f,
-		 0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
-		 0.5f, -0.5f,  0.5f,  1.0f, 0.0f,
-		-0.5f, -0.5f,  0.5f,  0.0f, 0.0f,
-		-0.5f, -0.5f, -0.5f,  0.0f, 1.0f,
+		  -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+		   0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+		   0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+		   0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+		  -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+		  -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
 
-		-0.5f,  0.5f, -0.5f,  0.0f, 1.0f,
-		 0.5f,  0.5f, -0.5f,  1.0f, 1.0f,
-		 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-		 0.5f,  0.5f,  0.5f,  1.0f, 0.0f,
-		-0.5f,  0.5f,  0.5f,  0.0f, 0.0f,
-		-0.5f,  0.5f, -0.5f,  0.0f, 1.0f
+		  -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
+		   0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
+		   0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
+		   0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
+		  -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
+		  -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f
 	};
 
 	unsigned int indices[] = {
@@ -85,9 +85,9 @@ int main() {
 	//ebo.setEBOdata(mesh1.getISize() * sizeof(unsigned int), mesh1.getIndices(), GL_STATIC_DRAW);
 
 	//VAO布局
-	vao.setAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)0);
+	vao.setAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
 	vao.enableAttrib(0);
-	vao.setAttribPointer(1, 2, GL_FLOAT, GL_FALSE, 5 * sizeof(float), (void*)(3 * sizeof(float)));
+	vao.setAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
 	vao.enableAttrib(1);
 
 
@@ -106,6 +106,9 @@ int main() {
 	shader.setInt("texture1", 0);
 	shader.setInt("texture2", 1);
 
+
+
+
 	glm::vec3 cubePositions[] = {
 		glm::vec3( 0.0f,  0.0f,  0.0f),
 		glm::vec3( 2.0f,  5.0f, -15.0f),
@@ -118,12 +121,26 @@ int main() {
 		glm::vec3( 1.5f,  0.2f, -1.5f),
 		glm::vec3(-1.3f,  1.0f, -1.5f)
 	};
+
 	const unsigned int cubeCount = sizeof(cubePositions) / sizeof(glm::vec3);
+
+	//设置灯光
+	Mesh mesh2(vertices, indices, sizeof(vertices) / sizeof(float), sizeof(indices) / sizeof(unsigned int));
+	VBO vboLight;
+	vbo.setVBOdata(mesh1.getVSize() * sizeof(float), mesh1.getVertex(), GL_STATIC_DRAW);
+	VAO vaoLight;
+	vaoLight.bindVAO();
+
+	vaoLight.setAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
+	vaoLight.enableAttrib(0);
+	Shader shaderLight("res/shader/light.shader");
 
 	//渲染前集中解绑
 	vbo.unbindVBO();
 	vao.unbindVAO();
 	shader.unShader();
+
+	glm::vec3 lightPos = glm::vec3(2.0f, 2.0f, 3.0f);
 
 	while (!window.shouldClose()) {
 		window.beginFrame();
@@ -136,21 +153,38 @@ int main() {
 			(float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
 
 		shader.useShader();
-		shader.setFloat4("view", view);
-		shader.setFloat4("projection", projection);
+		shader.setMat4("view", view);
+		shader.setMat4("projection", projection);
+
+		//传物体片段着色器uniform
+		shader.setVec3("lightPos", lightPos);
+		shader.setFloat3("lightColor", 1.0f, 1.0f, 1.0f);
+		shader.setVec3("viewPos", camera.getPosition());
+		shader.setFloat3("objectColor", 1.0f, 0.5f, 0.31f);
 
 		vao.bindVAO();
 		texture1.activeTexture(GL_TEXTURE0);
 		texture2.activeTexture(GL_TEXTURE1);
 
-		for (unsigned int i = 0; i < cubeCount; ++i) {
-			glm::mat4 model = glm::mat4(1.0f);
-			model = glm::translate(model, cubePositions[i]);
-			float angle = 20.0f * (float)i;
-			model = glm::rotate(model, glm::radians(angle), glm::vec3(0.5f, 1.0f, 0.0f));
-			shader.setFloat4("model", model);
-			glDrawArrays(GL_TRIANGLES, 0, 36);
-		}
+		glm::mat4 model = glm::mat4(1.0f);
+		shader.setMat4("model",model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		shaderLight.useShader();
+		shaderLight.setMat4("view", view);
+		shaderLight.setMat4("projection", projection);
+		//传灯光颜色
+		shaderLight.setFloat3("lightColor", 1.0f, 1.0f, 1.0f);
+
+		vaoLight.bindVAO();
+
+		glm::vec3 translate= glm::vec3(2.0f,2.0f,3.0f);
+		model = glm::mat4(1.0f);
+		model=glm::translate(model,translate);
+		model = glm::scale(model, glm::vec3(0.2f));
+		shaderLight.setMat4("model", model);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
 
 		window.endFrame();
 	}

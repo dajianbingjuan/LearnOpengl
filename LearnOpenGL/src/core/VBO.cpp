@@ -20,7 +20,7 @@ void VBO::unbindVBO()
 {
     glBindBuffer(GL_ARRAY_BUFFER,0);
 }
-
+                                        //数组内存大小    //数组            //绘制模式
 void VBO::setVBOdata(unsigned int size, float data[], unsigned int mode)
 {
     glBufferData(GL_ARRAY_BUFFER, size, data, mode);
